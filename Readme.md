@@ -1,7 +1,7 @@
 # Feature creep
 
-![Client ci](https://github.com/niekcandaele/feature-creep/actions/workflows/clientCi.yml/badge.svg)
-![Server ci](https://github.com/niekcandaele/feature-creep/actions/workflows/serverCi.yml/badge.svg)
+![Client ci](https://github.com/redis-developer/feature-creep/actions/workflows/clientCi.yml/badge.svg)
+![Server ci](https://github.com/redis-developer/feature-creep/actions/workflows/serverCi.yml/badge.svg)
 
 
 An application for [squad health checks](https://engineering.atspotify.com/2014/09/16/squad-health-check-model/). 
@@ -27,7 +27,7 @@ Built for [Redis Hackathon 2021](https://redislabs.com/hackathon-2021/).
 - After background processing, a report is sent to Discord 
 - After background processing, data is saved to Redis Timeseries
 
-![example Discord output](https://raw.githubusercontent.com/niekcandaele/feature-creep/master/docs/img/discord_report.png)
+![example Discord output](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/discord_report.png)
 
 
 ## Installation
@@ -183,8 +183,8 @@ Contains a client and logic for our Redis Timeseries integration. After a sessio
 
 Unfortunately, this module did not make it to the frontend.
 
-![timeseries graph](https://raw.githubusercontent.com/niekcandaele/feature-creep/master/docs/img/timeseries.png)
-![timeseries GraphQL API](https://raw.githubusercontent.com/niekcandaele/feature-creep/master/docs/img/timeseries_graphql.png)
+![timeseries graph](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/timeseries.png)
+![timeseries GraphQL API](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/timeseries_graphql.png)
 
 ### test
 
@@ -204,5 +204,5 @@ Github Actions runs scripts for us on every commit.
 
 
 
- ![Feature creep icon](https://raw.githubusercontent.com/niekcandaele/feature-creep/master/docs/img/company-icon.svg)
+ ![Feature creep icon](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/company-icon.svg)
  # BOOOOOOOO
