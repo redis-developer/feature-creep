@@ -1,5 +1,5 @@
 {
-    "app_name": "Squad Health Checks using RediSearch & RedisJSON",
+    "app_name": "Squad Health Checks Application",
     "description": "Squad health checks using RedisJSON + RediSearch + Redis Streams",
     "rank": "42",
     "type": "Full App",
