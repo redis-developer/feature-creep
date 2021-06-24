@@ -1,9 +1,5 @@
 # Feature creep
 
-![Client ci](https://github.com/redis-developer/feature-creep/actions/workflows/clientCi.yml/badge.svg)
-![Server ci](https://github.com/redis-developer/feature-creep/actions/workflows/serverCi.yml/badge.svg)
-
-
 An application for [squad health checks](https://engineering.atspotify.com/2014/09/16/squad-health-check-model/). 
 Built for [Redis Hackathon 2021](https://redislabs.com/hackathon-2021/).
 
