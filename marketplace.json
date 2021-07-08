@@ -7,12 +7,12 @@
     "repo_url": "https://github.com/redis-developer/feature-creep",
     "download_url": "https://github.com/redis-developer/feature-creep/archive/refs/heads/master.zip",
     "hosted_url": "",
-    "quick_deploy": "False",
+    "quick_deploy": "true",
     "deploy_buttons": [],
     "language": [
         "TypeScript",
-        "Python",
-        "Docker"
+        "Python"
+        
     ],
     "redis_commands": [
         "GET",
