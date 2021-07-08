@@ -38,7 +38,7 @@
         "Redis Streams"
     ],
     "redis_modules": [
-        "RediJSON",
+        "RedisJSON",
         "RedisGears",
         "RediSearch",
         "RedisTimeseries"
