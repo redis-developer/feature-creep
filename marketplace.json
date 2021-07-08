@@ -48,6 +48,6 @@
     "special_tags": [
         "Hackathon"
     ],
-    "verticals": [],
+    "verticals": ["Technology"],
     "markdown": "https://raw.githubusercontent.com/redis-developer/feature-creep/master/Readme.md"
 }
