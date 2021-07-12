@@ -42,7 +42,7 @@
         "TS.RANGE"
     ],
     "redis_features": [
-        "Redis Streams"
+        "Streams"
     ],
     "redis_modules": [
         "RedisJSON",
