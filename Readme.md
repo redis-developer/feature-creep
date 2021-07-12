@@ -180,7 +180,6 @@ Contains a client and logic for our Redis Timeseries integration. After a sessio
 
 Unfortunately, this module did not make it to the frontend.
 
-
 ### Test
 
 The tests! This folder contains some helper functions used during the tests.
