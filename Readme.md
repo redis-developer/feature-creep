@@ -180,8 +180,6 @@ Contains a client and logic for our Redis Timeseries integration. After a sessio
 
 Unfortunately, this module did not make it to the frontend.
 
-![timeseries graph](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/timeseries.png)
-![timeseries GraphQL API](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/timeseries_graphql.png)
 
 ### Test
 
