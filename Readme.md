@@ -23,7 +23,7 @@ Built for [Redis Hackathon 2021](https://redislabs.com/hackathon-2021/).
 - After background processing, a report is sent to Discord 
 - After background processing, data is saved to Redis Timeseries
 
-![example Discord output](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/discord_report.png)
+![example Discord output](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/discord_report.png =250x250)
 
 
 ## Installation
@@ -200,5 +200,5 @@ Github Actions runs scripts for us on every commit.
 
 
 
- ![Feature creep icon](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/company-icon.svg)
- # BOOOOOOOO
+ ![Feature creep icon](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/company-icon.svg =250x250)
+
