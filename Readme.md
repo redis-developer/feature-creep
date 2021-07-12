@@ -1,6 +1,6 @@
 # Feature creep
 
-An application for [squad health checks](https://engineering.atspotify.com/2014/09/16/squad-health-check-model/). 
+An application for Squad health checks.
 
 
 ## Demo
