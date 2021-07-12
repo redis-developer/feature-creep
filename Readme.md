@@ -150,7 +150,7 @@ In production mode, you must first obtain a valid JWT. Visit the Cognito login p
 
 Inside the folder `server/src` you will find the backend code.
 
-### gears
+### RedisGears
 
 Contains our Redis Gears functions. The file `gears.ts` includes a client to interact with Redis Gears. It supports running functions directly and registering background functions. 
 
@@ -161,19 +161,20 @@ The results are pushed to streams to be picked up by
 
 - send_notification.py which sends out a Discord notification
 - Timeseries module
-### graphql
+
+### GraphQL
 
 Contains the GraphQL API, created with Apollo. When the application is running, you can visit `http://localhost:4000/` to see the API playground.
 
-### resjon
+### RedisJSON
 
 Contains a very rudimentary (it's a hackathon after all :)) ORM. This is where most of the business logic lives. 
 
-### redisearch
+### RediSearch
 
 Contains a client and the logic for searching existing questions. When a user creates a session and adds their own question(s), these questions are stored and indexed by RediSearch. Users who later want to search for questions will see these as recommendations. These recommendations can easily be added to a new session.
 
-### timeseries
+### RedisTimeseries
 
 Contains a client and logic for our Redis Timeseries integration. After a session ends, background processing happens with Redis Gears. The results from that are handled by this module. It uses Redis streams to handle the incoming data
 
@@ -182,7 +183,7 @@ Unfortunately, this module did not make it to the frontend.
 ![timeseries graph](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/timeseries.png)
 ![timeseries GraphQL API](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/timeseries_graphql.png)
 
-### test
+### Test
 
 The tests! This folder contains some helper functions used during the tests.
 
@@ -200,5 +201,5 @@ Github Actions runs scripts for us on every commit.
 
 
 
- ![Feature creep icon](https://raw.githubusercontent.com/redis-developer/feature-creep/master/docs/img/company-icon.svg)
+ 
 
