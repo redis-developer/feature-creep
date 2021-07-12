@@ -1,7 +1,7 @@
 # Feature creep
 
 An application for [squad health checks](https://engineering.atspotify.com/2014/09/16/squad-health-check-model/). 
-Built for [Redis Hackathon 2021](https://redislabs.com/hackathon-2021/).
+
 
 ## Demo
 [![Video](https://img.youtube.com/vi/Kmqr_M1B9R4/0.jpg)](https://www.youtube.com/watch?v=Kmqr_M1B9R4 "Video Title")
