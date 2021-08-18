@@ -57,6 +57,6 @@
     "special_tags": [
         "Hackathon"
     ],
-    "verticals": ["Technology"],
+    "verticals": ["Healthcare"],
     "markdown": "https://raw.githubusercontent.com/redis-developer/feature-creep/master/Readme.md"
 }
