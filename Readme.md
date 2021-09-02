@@ -3,10 +3,6 @@
 An application for Squad health checks.
 
 
-## Demo
-[![Video](https://img.youtube.com/vi/Kmqr_M1B9R4/0.jpg)](https://www.youtube.com/watch?v=Kmqr_M1B9R4 "Video Title")
-
-
 ## Features
 
 - Uses RedisJSON as main datastore
