@@ -50,7 +50,7 @@
         "RedisJSON",
         "RedisGears",
         "RediSearch",
-        "RedisTimeseries"
+        "RedisTimeSeries"
     ],
     "app_image_urls": [],
     "youtube_url": "https://www.youtube.com/watch?v=JUTSmgdxpG0",

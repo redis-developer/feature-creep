@@ -128,6 +128,7 @@ export type Query = {
   session?: Maybe<Session>;
   search?: Maybe<Array<Maybe<SearchResponse>>>;
   question?: Maybe<Question>;
+  timeseries?: Maybe<Array<Maybe<Timeseries>>>;
 };
 
 
@@ -159,6 +160,12 @@ export type QuerySearchArgs = {
 export type QueryQuestionArgs = {
   questionId: Scalars['String'];
   sessionId: Scalars['String'];
+};
+
+
+export type QueryTimeseriesArgs = {
+  squadId: Scalars['String'];
+  questionName: Scalars['String'];
 };
 
 export type Question = {
@@ -214,6 +221,12 @@ export enum SquadFilterType {
   Memberof = 'MEMBEROF',
   All = 'ALL'
 }
+
+/** A timeseries datapoint */
+export type Timeseries = {
+  timestamp?: Maybe<Scalars['String']>;
+  value?: Maybe<Scalars['Float']>;
+};
 
 export type AddQuestion = {
   sessionId: Scalars['String'];
