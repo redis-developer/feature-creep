@@ -1,7 +1,8 @@
 import {
-  AccountRecovery,
-  ClientAttributes,
+  //ClientAttributes,
+  ProviderAttribute,
   UserPool,
+  UserPoolIdentityProviderGoogle,
   UserPoolClient,
 } from '@aws-cdk/aws-cognito';
 import * as cdk from '@aws-cdk/core';
@@ -25,21 +26,25 @@ export class AuthStack extends cdk.Stack {
         new cdk.CfnOutput(this, 'Certificate', { value: certificateArn }); */
 
     // Cognito User Pool with Email Sign-in Type.
-    const userPool = new UserPool(this, 'userPool', {
-      signInAliases: {
-        email: true,
-      },
-      accountRecovery: AccountRecovery.EMAIL_ONLY,
-      selfSignUpEnabled: true,
-      standardAttributes: {
-        email: {
-          required: true,
-          mutable: true,
+    const userPool = new UserPool(this, 'userPool', {});
+    
+    // Create a Google Provider
+    const provider = new UserPoolIdentityProviderGoogle(this, 'googleProvider', {
+        userPool: userPool,
+        clientId: 'clientId', // Replace with client id from Google Dev console
+        clientSecret: 'clientSecret', // Replace with client secret from Google Dev console
+        attributeMapping: {
+            email: ProviderAttribute.GOOGLE_EMAIL,
+            givenName: ProviderAttribute.GOOGLE_GIVEN_NAME,
         },
-      },
-    });
+        scopes: ['profile', 'email', 'openid']
+    })
+
+    // Register the google provider with the userPool
+    userPool.registerIdentityProvider(provider);
 
     /* App Client */
+    /*
     const clientWriteAttributes = new ClientAttributes().withStandardAttributes(
       { email: true }
     );
@@ -47,21 +52,19 @@ export class AuthStack extends cdk.Stack {
     const clientReadAttributes = clientWriteAttributes.withStandardAttributes({
       emailVerified: true,
     });
+    */
 
     const userPoolClient = new UserPoolClient(this, 'userPoolClient', {
       userPool,
       generateSecret: false,
-      authFlows: {
-        userPassword: true,
-      },
       preventUserExistenceErrors: true,
-      readAttributes: clientReadAttributes,
-      writeAttributes: clientWriteAttributes,
+      //readAttributes: clientReadAttributes,
+      //writeAttributes: clientWriteAttributes,
       oAuth: {
         flows: {
           implicitCodeGrant: true,
         },
-        callbackUrls: ['http://localhost:3000/redirect'],
+        callbackUrls: ['http://localhost:3000/redirect'], //Change this to the domain of the EC2 instance
       },
     });
 
@@ -73,7 +76,7 @@ export class AuthStack extends cdk.Stack {
     });
 
     domain.signInUrl(userPoolClient, {
-      redirectUri: 'http://localhost:3000/redirect',
+      redirectUri: 'http://localhost:3000/redirect', //Change this to the domain of the EC2 instance
     });
   }
 }

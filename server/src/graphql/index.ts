@@ -9,7 +9,7 @@ import { schema } from './schema';
 
 const client = jwksClient({
   jwksUri:
-    'https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_4MH59fRxt/.well-known/jwks.json',
+    'https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_yqlOgG0Bh/.well-known/jwks.json',
 });
 
 export const server = new ApolloServer({

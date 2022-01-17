@@ -17,7 +17,9 @@ const Container = styled.div`
 function setJWT(hash: string) {
   const params = new URLSearchParams(hash);
   const idToken = params.get('#id_token');
+  console.log(idToken);
   const accessToken = params.get('access_token');
+  console.log(accessToken);
   // no jwt in redirect passed.
   if (idToken && accessToken) {
     localStorage.setItem('accessToken', accessToken);
@@ -44,6 +46,7 @@ export const Redirect: FC = () => {
   // check local storage
   useEffect(() => {
     setJWT(location.hash);
+    console.log(location.hash);
     redirect();
   }, []);
 
