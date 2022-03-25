@@ -1,7 +1,7 @@
 {
     "app_name": "Squad Health Checks Application",
     "description": "Squad health checks using RedisJSON + RediSearch + Redis Streams",
-    "rank": 42,
+    "rank": 41,
     "featured": true,
     "type": "Full App",
     "contributed_by": "Community",
