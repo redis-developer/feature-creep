@@ -1,6 +1,6 @@
 {
     "app_name": "Squad Health Checks Application",
-    "description": "Squad health checks using RedisJSON + RediSearch + Redis Streams",
+    "description": "Squad health checks using Redis JSON + Search + Streams",
     "rank": 41,
     "featured": true,
     "type": "Full App",
@@ -21,7 +21,6 @@
     "language": [
         "TypeScript",
         "Python"
-        
     ],
     "redis_commands": [
         "GET",
@@ -43,14 +42,14 @@
         "TS.CREATE",
         "TS.RANGE"
     ],
-    "redis_features": [
+    "redis_use_cases": [
         "Streams"
     ],
     "redis_modules": [
-        "RedisJSON",
-        "RedisGears",
-        "RediSearch",
-        "RedisTimeSeries"
+        "JSON",
+        "Triggers and Functions",
+        "Search and QUery",
+        "Time Series"
     ],
     "app_image_urls": [],
     "youtube_url": "https://www.youtube.com/watch?v=JUTSmgdxpG0",
