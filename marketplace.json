@@ -48,7 +48,7 @@
     "redis_features": [
         "JSON",
         "Triggers and Functions",
-        "Search and QUery",
+        "Search and Query",
         "Time Series"
     ],
     "app_image_urls": [],
