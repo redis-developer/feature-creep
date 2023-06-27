@@ -45,7 +45,7 @@
     "redis_use_cases": [
         "Streams"
     ],
-    "redis_modules": [
+    "redis_features": [
         "JSON",
         "Triggers and Functions",
         "Search and QUery",
